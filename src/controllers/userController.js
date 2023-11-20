@@ -23,15 +23,6 @@ class UsersController{
     return response.status(201).json();
   }
 
-  async delete(request,response){
-    const {id}=request.params
-  
-    await knex("users").where({id}).delete()
-
-    return response.status(201).json()
-    
-  }
-
   
 }
 module.exports=UsersController
