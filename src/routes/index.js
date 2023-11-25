@@ -2,9 +2,11 @@ const {Router}=require("express")
 
 const routes=Router();
 
-const useRoutes=require("./users.routes")
+const userRoutes=require("./users.routes")
+const notesRoutes=require("./notes.routes")
 
 
-routes.use("/users",useRoutes)
+routes.use("/users",userRoutes)
+routes.use("/notes",notesRoutes)
 
 module.exports=routes
