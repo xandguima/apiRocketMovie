@@ -49,7 +49,7 @@ class UsersController{
     if(!newPassword && oldPassword){
      throw new AppError("Para redefinir a senha é necessario informar a nova senha")
     }
-    console.log(user[0].password)
+    
     if(newPassword && oldPassword){
       const checkPassword= await compare(oldPassword,user[0].password)
       if(!checkPassword){
