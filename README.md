@@ -14,8 +14,5 @@ API executada no curso Explore da RocketSeat
 
 ## Start the server
 
-    nodemon ./src/server.js
-    and
-    if not install nodemon
-    node ./src/server.js
+    npm run dev
 
