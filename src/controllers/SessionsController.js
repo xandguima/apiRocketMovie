@@ -13,7 +13,7 @@ class SessionsController {
    
     
     if(!user){
-      throw new AppError("Email e/ou senha incorreta",401)
+      throw new AppError("Email não cadastrado",401)
     }
     
     
