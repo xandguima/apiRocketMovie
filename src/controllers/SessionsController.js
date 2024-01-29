@@ -1,8 +1,8 @@
-const knex =require('../database/knex')
-const{compare}=require("bcryptjs")
-const AppError= require("../utils/AppError")
-const authConfig=require("../config/auth")
-const {sign}= require("jsonwebtoken")
+const{compare}=require("bcryptjs");
+const {sign}= require("jsonwebtoken");
+const knex =require('../database/knex');
+const authConfig=require("../config/auth");
+const AppError= require("../utils/AppError");
 
 class SessionsController {
   async create(request,response){

@@ -1,5 +1,5 @@
+const knex=require("../database/knex");
 const { application } = require("express");
-const knex=require("../database/knex")
 const AppError = require("../utils/AppError");
 
 class notesMovie{
